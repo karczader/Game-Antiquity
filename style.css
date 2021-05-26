@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300;500&display=swap');
+
+:root{
+    --main-color: #996633;
+    --background-color: #663300;
+    --hover-color: #330000;
+    --text-color: #FFFFCC;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--main-color);
+    font-family: 'KoHo', sans-serif;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    color:  black;
+
+}
+
+main{
+    background-color: var(--background-color);
+    width: 1200px;
+    height: 800px;
+    margin-top: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration: none;
+
+}
+
+a:hover{
+    text-decoration: none;
+}

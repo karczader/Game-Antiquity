@@ -1,0 +1,99 @@
+:root{
+    --main-color: #996633;
+    --background-color: #663300;
+    --hover-color: #330000;
+    --text-color: #FFFFCC;
+    --green:#009933;
+    --red: #990000;
+}
+
+.board{
+    background-color: var(--background-color);
+    display: grid;
+    margin-left: 100px;
+    margin-top: 100px;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    grid-gap: 5px;
+    padding: 5px;
+    border: 1px solid var(--hover-color);
+    width: 445px;
+    float: left;
+}
+
+.board__item{
+    background-color: var(--main-color);
+    border: 1px solid var(--hover-color);
+    transition: all .1s linear;
+}
+
+.board__item:hover{
+    border: 1px solid var(--text-color);
+    background-color: var(--backgroud-color);
+
+}
+
+.board__item-black{
+    background-color: black;
+}
+
+.board__item-black:hover{
+    background-color: black;
+    border: none;
+}
+
+.board__item-green{
+    background-color: var(--green);
+}
+
+.board__item-green:hover{
+    background-color: var(--green);
+    border: 1px solid var(--text-color);
+}
+
+
+.board__item-red{
+    background-color: var(--red);
+}
+
+.board__item-red:hover{
+    background-color: var(--red);
+    border: 1px solid var(--text-color);
+}
+
+.forest{
+    display: none;
+    width: 500px;
+    height: 600px;
+    background-color: var(--text-color);
+    margin-top: 50px;
+    padding: 5px;
+    margin-left: 50px;
+    border: 1px solid var(--hover-color);
+    float: left;
+}
+
+
+.forest.show{
+    display: flex;
+}
+
+.arena{
+    display: none;
+    width: 500px;
+    height: 600px;
+    background-color: var(--text-color);
+    margin-top: 50px;
+    padding: 5px;
+    margin-left: 50px;
+    border: 1px solid var(--hover-color);
+    float: left;
+}
+
+
+.arena.show{
+    display: flex;
+}
+
+
+
